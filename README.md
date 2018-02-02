@@ -20,3 +20,4 @@ The CI server uses the [`py_compile` module](https://docs.python.org/3/library/p
 To be able to receive webhooks from github you need to be able to receive requests to your local server. For this purpose we use [Ngrok](https://ngrok.com/).
 Download Ngrok and run `./ngrok http 8014` to open port 8014. Now paste the new url
 `<generated url>/pull-request` in the settings for webhooks in the github repository.
+hey
