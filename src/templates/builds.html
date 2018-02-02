@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Builds</title>
+</head>
+<body>
+    <table>
+    {% for build in data %}
+        <tr {% if build.build_status %}style="color: green"{% else %}style="color: red"{% endif %}>
+            <td>{{ build.time_stamp }}</td>
+            <td>{{ build.build_log }}</td>
+            <td>{{ build.build_status }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>
