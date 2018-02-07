@@ -1,4 +1,4 @@
 
-def always_true():
+def test_always_true():
     res = True
     assert(res is True)
